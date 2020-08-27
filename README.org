@@ -22,6 +22,12 @@ docker image pull ruimarinho/bitcoin-core:latest
 docker image pull ruimarinho/bitcoin-core:0.19.1
 #+END_SRC
 
+** Run interactive shell
+
+#+BEGIN_SRC sh
+docker run --rm -v`pwd`:/home/bitcoin/.bitcoin -it ruimarinho/bitcoin-core bash
+#+END_SRC
+
 ** References
 
 1. https://hub.docker.com/r/ruimarinho/bitcoin-core
